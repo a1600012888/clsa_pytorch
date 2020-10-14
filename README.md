@@ -1,14 +1,15 @@
-## Unoffical implementation of Contrastive Learning with Stronger Augmentations. WIP
+## Unoffical implementation of Contrastive Learning with Stronger Augmentations 
+WIP!!
 
-This is an unofficial PyTorch implementation of the [CLSA paper](https://openreview.net/forum?id=KJSC_AsN14):
+This is an unofficial PyTorch implementation of the CLSA paper: [Contrastive Learning with Stronger Augmentations](https://openreview.net/forum?id=KJSC_AsN14):
 
-Note: This implementation is most adopted from the offical MoCo's implementation from https://github.com/facebookresearch/moco 
+Note: This implementation is most adopted from the offical moco's implementation from https://github.com/facebookresearch/moco 
 This repo aims to be minimal modifications on that code. 
 
 
 
 ### Preparation
-Note: This section is copied from MoCo's repo
+Note: This section is copied from moco's repo
 
 Install PyTorch and ImageNet dataset following the [official PyTorch ImageNet training code](https://github.com/pytorch/examples/tree/master/imagenet).
 
@@ -32,7 +33,7 @@ This script uses all the default hyper-parameters as described in CLSA paper.
 
 
 ### Linear Classification
-Note: This section is copied from MoCo's repo
+Note: This section is copied from moco's repo
 
 With a pre-trained model, to train a supervised linear classifier on frozen features/weights in an 8-gpu machine, run:
 ```
