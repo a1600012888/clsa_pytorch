@@ -182,7 +182,7 @@ class CLSA(nn.Module):
             # compute nll loss below as -P(q, k) * log(P(q_s, k))
             log_p_s = nn.functional.log_softmax(logits_s, dim=-1)
 
-            nll = torch.einsum('nk,nk->n', [p_weak, log_p_s])
+            nll = -1.0 * torch.einsum('nk,nk->n', [p_weak, log_p_s])
             loss_ddm = loss_ddm + torch.mean(nll) # average over the batch dimension
 
         loss = loss_contrastive + self.ratio * loss_ddm
