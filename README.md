@@ -51,3 +51,7 @@ python main_lincls.py \
 2. ImageNet-1K CLSA-Mul-200epoch pretraining:  Running
 3. Evaluate CLSA-Single/-Mul on ImageNet Linear Protocal 
 4. Evaluate CLSA-Single/-Mul on VOC07 Det
+
+current results: (linear evaluation protocol on ImageNet)
+clsa-single pretraining 40 epochs: 55.4%
+clsa-mul pretraining 40 epochs:  60.2%
