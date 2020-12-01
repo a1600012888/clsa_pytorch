@@ -1,6 +1,15 @@
 ## Unoffical implementation of Contrastive Learning with Stronger Augmentations 
 WIP!!
 
+current results: (linear evaluation protocol on ImageNet)
+
+|Train epochs   |  Single |  Mul-5 |  MoCo-v2 |   |
+|---|---|---|---|---|
+| 40  | 55.4% |  60.2% |  56.9% |   |
+| 200  | 66.5%  |  68.3% | 67.6%  |   |
+|   |   |   |   |   |
+
+
 This is an unofficial PyTorch implementation of the CLSA paper: [Contrastive Learning with Stronger Augmentations](https://openreview.net/forum?id=KJSC_AsN14):
 
 Note: This implementation is most adopted from the offical moco's implementation from https://github.com/facebookresearch/moco 
@@ -52,6 +61,4 @@ python main_lincls.py \
 3. Evaluate CLSA-Single/-Mul on ImageNet Linear Protocal 
 4. Evaluate CLSA-Single/-Mul on VOC07 Det
 
-current results: (linear evaluation protocol on ImageNet)
-clsa-single pretraining 40 epochs: 55.4%
-clsa-mul pretraining 40 epochs:  60.2%
+
